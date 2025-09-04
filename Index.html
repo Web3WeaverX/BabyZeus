@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BABYZEUS ⚡ The Meme God Has Arrived</title>
+    <meta name="description" content="BABYZEUS ⚡ The Meme God Has Arrived – A meme coin powered by community, thunder, and strong branding. Join the movement today!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -99,6 +100,398 @@
 
         .cta-buttons {
             margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            border: 2px solid var(--primary-color);
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--heading-color);
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .cta-btn.primary {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(247, 210, 47, 0.3);
+        }
+
+        /* General Section Styling */
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .section-content {
+            margin-top: 40px;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .list-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-items li {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Tokenomics Section */
+        #tokenomics .pie-chart-container {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 30px;
+        }
+
+        #tokenomics .pie-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-image: conic-gradient(
+                var(--primary-color) 0% 50%,
+                #6c5ce7 50% 70%,
+                #00b894 70% 85%,
+                #fdcb6e 85% 95%,
+                #d63031 95% 100%
+            );
+            transform: rotate(-90deg);
+        }
+
+        #tokenomics .breakdown-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #tokenomics .breakdown-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+        }
+
+        #tokenomics .breakdown-item::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+        #tokenomics .breakdown-item:nth-child(1)::before { background-color: var(--primary-color); }
+        #tokenomics .breakdown-item:nth-child(2)::before { background-color: #6c5ce7; }
+        #tokenomics .breakdown-item:nth-child(3)::before { background-color: #00b894; }
+        #tokenomics .breakdown-item:nth-child(4)::before { background-color: #fdcb6e; }
+        #tokenomics .breakdown-item:nth-child(5)::before { background-color: #d63031; }
+
+        /* Roadmap Section */
+        .roadmap-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .roadmap-timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: var(--primary-color);
+            border: 4px solid var(--background-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -12px;
+            right: auto;
+        }
+
+        .timeline-content {
+            background-color: var(--secondary-color);
+            padding: 20px 30px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Community Section */
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-link {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .footer-cta {
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(247, 210, 47, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(247, 210, 47, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(247, 210, 47, 0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .tagline { font-size: 1.2rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .roadmap-timeline::after { left: 20px; }
+            .timeline-item { width: 100%; padding-left: 60px; }
+            .timeline-item:nth-child(odd) { text-align: left; }
+            .timeline-item:nth-child(even) { left: 0; }
+            .timeline-item::after { left: 10px; right: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-content">
+                <img src="https://i.postimg.cc/Y214PC3W/IMG-20250904-112722-670.jpg" alt="BABYZEUS Meme Coin Logo" class="logo-img">
+                <h1>BABYZEUS ⚡ The Meme God Has Arrived</h1>
+                <p class="tagline">The Meme God Is Here</p>
+                <p class="narrative-line">Born from thunder, raised by memes, powered by community.</p>
+                <div class="cta-buttons">
+                    <a href="https://t.me/babyzeusCTO" target="_blank" class="cta-btn">Join Telegram</a>
+                    <a href="#" class="cta-btn primary" role="button">Buy BABYZEUS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <h2>The Story of <span class="highlight">BABYZEUS</span></h2>
+                <div class="section-content">
+                    <p>BABYZEUS is the son of thunder — a meme born to rule the Web3 skies. More than just hype, BABYZEUS is about building a community that lasts. Backed by lightning energy, strong branding, and future utility, BABYZEUS is here to strike the meme world with power.</p>
+                    <ul class="list-items" style="margin-top: 20px;">
+                        <li>Community-driven project</li>
+                        <li>Fair tokenomics</li>
+                        <li>Long-term vision (NFTs, gaming, DAO governance)</li>
+                        <li>Transparent and fun</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why -->
+        <section id="why">
+            <div class="container">
+                <h2>Why <span class="highlight">BABYZEUS</span>?</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Meme Culture</h3>
+                        <p>A strong identity rooted in vibrant meme culture with a powerful visual brand.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Community Focus</h3>
+                        <p>A fair launch and a project built for and by the people.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Future-Proof</h3>
+                        <p>Planned utility with NFTs, gaming, and DAO integration for long-term growth.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Transparency</h3>
+                        <p>We believe in being open and honest with our community every step of the way.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tokenomics -->
+        <section id="tokenomics">
+            <div class="container">
+                <h2>Tokenomics</h2>
+                <div class="section-content">
+                    <div class="pie-chart-container">
+                        <div class="pie-chart"></div>
+                    </div>
+                    <ul class="breakdown-list">
+                        <li class="breakdown-item">50% Community & Rewards</li>
+                        <li class="breakdown-item">20% Liquidity</li>
+                        <li class="breakdown-item">15% Marketing</li>
+                        <li class="breakdown-item">10% Treasury</li>
+                        <li class="breakdown-item">5% Team</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap -->
+        <section id="roadmap">
+            <div class="container">
+                <h2>Roadmap</h2>
+                <div class="roadmap-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Phase 1 – Launch and Hype</h3>
+                            <p>Token launch, massive meme campaigns, and rapid community growth.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Phase 2 – Growth and Expansion</h3>
+                            <p>Major exchange listings, strategic partnerships, and our first NFT collection drop.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Phase 3 – Long-Term Utility</h3>
+                            <p>Implementation of DAO governance, DeFi utilities, and gaming integrations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section id="community">
+            <div class="container">
+                <h2>Join the <            margin-top: 40px;
             display: flex;
             justify-content: center;
             gap: 20px;
