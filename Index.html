@@ -1,104 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABYZEUS ⚡ The Meme God Has Arrived</title>
-    <meta name="description" content="BABYZEUS ⚡ The Meme God Has Arrived – A meme coin powered by community, thunder, and strong branding. Join the movement today!">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #f7d22f; /* Lightning yellow */
-            --secondary-color: #333; /* Dark gray */
-            --background-color: #121212; /* Dark background */
-            --text-color: #e0e0e0; /* Light gray text */
-            --heading-color: #ffffff; /* White headings */
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BABYZEUS ⚡ The Meme God Has Arrived</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f16;
+      --card:#111827;
+      --muted:#9aa3af;
+      --text:#e5e7eb;
+      --brand:#ffd166;
+      --radius:20px;
+      --border:1px solid rgba(255,255,255,.08);
+    }
+    body{margin:0;background:var(--bg);color:var(--text);font-family:"Outfit",sans-serif}
+    .container{width:min(1100px,92%);margin:auto}
+    header{padding:1.2rem 0;text-align:center}
+    header img{max-width:240px;width:100%;height:auto}
+    h1{font-size:2.4rem;margin:.8rem 0 0}
+    p{color:var(--muted);font-size:1.1rem}
+    section{padding:3rem 0}
+    h2{font-size:1.8rem;margin-bottom:.8rem}
+    .card{background:var(--card);border:var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.2rem}
+    .pill{display:inline-block;padding:.4rem .8rem;margin:.3rem;background:rgba(255,255,255,.06);border-radius:999px}
+    footer{text-align:center;padding:2rem 0;border-top:var(--border);color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <!-- Top Image & Title -->
+  <header>
+    <img src="assets/babyzeus-mascot.png" alt="BabyZeus mascot" />
+    <h1>BABYZEUS ⚡</h1>
+    <p>Born from thunder, raised by memes, powered by community.</p>
+  </header>
 
-        html {
-            scroll-behavior: smooth;
-        }
+  <!-- About -->
+  <section id="about" class="container">
+    <div class="card">
+      <h2>About BABYZEUS</h2>
+      <p>
+        BABYZEUS is the son of thunder — a meme born to rule the Web3 skies.
+        More than just hype, BABYZEUS is about building a community that lasts.
+        With strong branding and future utility, BABYZEUS is here to strike the
+        meme world with power.
+      </p>
+      <div>
+        <span class="pill">🧑‍🤝‍🧑 Community-driven</span>
+        <span class="pill">🧮 Fair tokenomics</span>
+        <span class="pill">🖼️ NFTs</span>
+        <span class="pill">🎮 Gaming</span>
+        <span class="pill">🗳️ DAO governance</span>
+      </div>
+    </div>
+  </section>
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+  <!-- Why -->
+  <section id="why" class="container">
+    <h2>Why BABYZEUS?</h2>
+    <div class="card"><strong>⚡ Meme Identity</strong> — Strong branding & meme power.</div>
+    <div class="card"><strong>🤝 Community Focus</strong> — Fair launch, people first.</div>
+    <div class="card"><strong>🚀 Viral Growth</strong> — Meme raids and campaigns.</div>
+    <div class="card"><strong>🧱 Future Ready</strong> — NFTs & DAO integration.</div>
+    <div class="card"><strong>🔍 Transparent</strong> — Clear communication & sustainability.</div>
+  </section>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+  <!-- Tokenomics -->
+  <section id="tokenomics" class="container">
+    <h2>Tokenomics</h2>
+    <div class="card">
+      <p><strong>Community & Rewards:</strong> 50%</p>
+      <p><strong>Liquidity:</strong> 20%</p>
+      <p><strong>Marketing:</strong> 15%</p>
+      <p><strong>Treasury:</strong> 10%</p>
+      <p><strong>Team:</strong> 5%</p>
+    </div>
+    <div class="card">
+      <h3>Contract Address (CA)</h3>
+      <p>⚡ Coming Soon ⚡</p>
+    </div>
+  </section>
 
-        /* Hero Section */
-        #hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: url('https://i.postimg.cc/Y214PC3W/IMG-20250904-112722-670.jpg') no-repeat center center/cover;
-            position: relative;
-            z-index: 1;
-        }
+  <!-- Roadmap -->
+  <section id="roadmap" class="container">
+    <h2>Roadmap</h2>
+    <div class="card">
+      <h3>Phase 1 – Launch & Hype</h3>
+      <ul>
+        <li>Token launch</li>
+        <li>Meme campaigns</li>
+        <li>Community growth</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Phase 2 – Growth & Expansion</h3>
+      <ul>
+        <li>Exchange listings</li>
+        <li>Partnerships</li>
+        <li>NFT collection</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Phase 3 – Long-Term Utility</h3>
+      <ul>
+        <li>DAO governance</li>
+        <li>DeFi utilities</li>
+        <li>Gaming integrations</li>
+      </ul>
+    </div>
+  </section>
 
-        #hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: -1;
-        }
+  <!-- Community -->
+  <section id="community" class="container">
+    <h2>Community</h2>
+    <div class="card">
+      <p>“BABYZEUS is powered by the people. The community is the lightning.”</p>
+      <p>
+        <a href="https://t.me/babyzeusCTO" target="_blank">📣 Telegram</a> |
+        <a href="https://x.com/BABYZEUSX?t=CmwSBA_HHPlE_MKRGD3LZA&s=09" target="_blank">🕊️ X (Twitter)</a>
+      </p>
+    </div>
+  </section>
 
-        .hero-content {
-            animation: fadeIn 2s ease-in-out;
-        }
+  <footer>
+    © <span id="year"></span> BABYZEUS. All rights reserved.
+  </footer>
 
-        .logo-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid var(--primary-color);
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
-        h1 {
-            font-size: 3rem;
-            color: var(--heading-color);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .tagline {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-top: 10px;
-        }
-
-        .narrative-line {
-            font-size: 1.2rem;
-            margin-top: 20px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-buttons {
+</body>
+</html>        .cta-buttons {
             margin-top: 40px;
             display: flex;
             justify-content: center;
